@@ -1,0 +1,1386 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\playwright.config.ts",
+    "rootDir": "C:/Users/2000153480/Downloads/testing/pipeline-ui/backend/tests/specs",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 600000,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 7
+    },
+    "preserveOutput": "failures-only",
+    "projects": [
+      {
+        "outputDir": "C:/Users/2000153480/Downloads/testing/pipeline-ui/backend/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 7
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/2000153480/Downloads/testing/pipeline-ui/backend/tests/specs",
+        "testIgnore": [
+          "**/node_modules/**",
+          "**/.git/**",
+          "**/seed.spec.ts"
+        ],
+        "testMatch": [
+          "**/*.spec.ts"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html",
+        {
+          "open": "never",
+          "outputFolder": "playwright-report"
+        }
+      ],
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.59.1",
+    "workers": 7,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "account-recovery.spec.ts",
+      "file": "account-recovery.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Authentication & Login",
+          "file": "account-recovery.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Account Recovery",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "timedOut",
+                      "duration": 35123,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded while setting up \"authenticatedPage\".\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while setting up \"authenticatedPage\".\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded while setting up \"authenticatedPage\".\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\tests\\seed.spec.ts",
+                            "column": 59,
+                            "line": 20
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'SSO Login' })\u001b[22m\n\n\n   at ..\\seed.spec.ts:20\n\n  18 |         \n  19 |         // click e12\n> 20 |     await page.getByRole('button', { name: 'SSO Login' }).click();\n     |                                                           ^\n  21 |         \n  22 |         console.log('✅ Authentication complete!');\n  23 |         \n    at Object.authenticatedPage (C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\tests\\seed.spec.ts:20:59)"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "🔐 Setting up authenticated session...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-28T09:03:13.148Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\test-results\\account-recovery-Authentication-Login-Account-Recovery-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\test-results\\account-recovery-Authentication-Login-Account-Recovery-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\test-results\\account-recovery-Authentication-Login-Account-Recovery-chromium\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\test-results\\account-recovery-Authentication-Login-Account-Recovery-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "ee4f86460bb49aaf6e54-39d0e9973901060ce03a",
+              "file": "account-recovery.spec.ts",
+              "line": 4,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "chat-interface-availability.spec.ts",
+      "file": "chat-interface-availability.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Chat Functionality",
+          "file": "chat-interface-availability.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Chat Interface Availability",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "timedOut",
+                      "duration": 34346,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded while setting up \"authenticatedPage\".\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while setting up \"authenticatedPage\".\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded while setting up \"authenticatedPage\".\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\tests\\seed.spec.ts",
+                            "column": 59,
+                            "line": 20
+                          },
+                          "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'SSO Login' })\u001b[22m\n\n\n   at ..\\seed.spec.ts:20\n\n  18 |         \n  19 |         // click e12\n> 20 |     await page.getByRole('button', { name: 'SSO Login' }).click();\n     |                                                           ^\n  21 |         \n  22 |         console.log('✅ Authentication complete!');\n  23 |         \n    at Object.authenticatedPage (C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\tests\\seed.spec.ts:20:59)"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "🔐 Setting up authenticated session...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-28T09:03:13.555Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\test-results\\chat-interface-availabilit-de52f-Chat-Interface-Availability-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\test-results\\chat-interface-availabilit-de52f-Chat-Interface-Availability-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\test-results\\chat-interface-availabilit-de52f-Chat-Interface-Availability-chromium\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\test-results\\chat-interface-availabilit-de52f-Chat-Interface-Availability-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c56abb05e3e1a4fa8e25-bfb5ecd653ee3b1ae4da",
+              "file": "chat-interface-availability.spec.ts",
+              "line": 4,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "chat-interface-launch.spec.ts",
+      "file": "chat-interface-launch.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Chat Functionality",
+          "file": "chat-interface-launch.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Chat Interface Launch",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "timedOut",
+                      "duration": 35013,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded while setting up \"authenticatedPage\".\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while setting up \"authenticatedPage\".\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded while setting up \"authenticatedPage\".\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\tests\\seed.spec.ts",
+                            "column": 59,
+                            "line": 20
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'SSO Login' })\u001b[22m\n\n\n   at ..\\seed.spec.ts:20\n\n  18 |         \n  19 |         // click e12\n> 20 |     await page.getByRole('button', { name: 'SSO Login' }).click();\n     |                                                           ^\n  21 |         \n  22 |         console.log('✅ Authentication complete!');\n  23 |         \n    at Object.authenticatedPage (C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\tests\\seed.spec.ts:20:59)"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "🔐 Setting up authenticated session...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-28T09:03:13.176Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\test-results\\chat-interface-launch-Chat-a5f16-ality-Chat-Interface-Launch-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\test-results\\chat-interface-launch-Chat-a5f16-ality-Chat-Interface-Launch-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\test-results\\chat-interface-launch-Chat-a5f16-ality-Chat-Interface-Launch-chromium\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\test-results\\chat-interface-launch-Chat-a5f16-ality-Chat-Interface-Launch-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "75912143b55fcb917192-c73b3ca76085b97a4e01",
+              "file": "chat-interface-launch.spec.ts",
+              "line": 4,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "chat-window-initialization.spec.ts",
+      "file": "chat-window-initialization.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Chat Interface",
+          "file": "chat-window-initialization.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Chat Window Initialization",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
+                      "status": "timedOut",
+                      "duration": 33412,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded while setting up \"authenticatedPage\".\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while setting up \"authenticatedPage\".\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded while setting up \"authenticatedPage\".\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\tests\\seed.spec.ts",
+                            "column": 59,
+                            "line": 20
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'SSO Login' })\u001b[22m\n\n\n   at ..\\seed.spec.ts:20\n\n  18 |         \n  19 |         // click e12\n> 20 |     await page.getByRole('button', { name: 'SSO Login' }).click();\n     |                                                           ^\n  21 |         \n  22 |         console.log('✅ Authentication complete!');\n  23 |         \n    at Object.authenticatedPage (C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\tests\\seed.spec.ts:20:59)"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "🔐 Setting up authenticated session...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-28T09:03:13.170Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\test-results\\chat-window-initialization-52066--Chat-Window-Initialization-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\test-results\\chat-window-initialization-52066--Chat-Window-Initialization-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\test-results\\chat-window-initialization-52066--Chat-Window-Initialization-chromium\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\test-results\\chat-window-initialization-52066--Chat-Window-Initialization-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "b9c3dbc60ffc69cc34f4-82d6521efb615404538e",
+              "file": "chat-window-initialization.spec.ts",
+              "line": 4,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "initial-page-load-and-layout.spec.ts",
+      "file": "initial-page-load-and-layout.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Authentication & Landing Page",
+          "file": "initial-page-load-and-layout.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Initial Page Load and Layout",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
+                      "status": "timedOut",
+                      "duration": 34356,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded while setting up \"authenticatedPage\".\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while setting up \"authenticatedPage\".\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded while setting up \"authenticatedPage\".\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\tests\\seed.spec.ts",
+                            "column": 59,
+                            "line": 20
+                          },
+                          "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'SSO Login' })\u001b[22m\n\n\n   at ..\\seed.spec.ts:20\n\n  18 |         \n  19 |         // click e12\n> 20 |     await page.getByRole('button', { name: 'SSO Login' }).click();\n     |                                                           ^\n  21 |         \n  22 |         console.log('✅ Authentication complete!');\n  23 |         \n    at Object.authenticatedPage (C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\tests\\seed.spec.ts:20:59)"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "🔐 Setting up authenticated session...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-28T09:03:13.167Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\test-results\\initial-page-load-and-layo-68772-nitial-Page-Load-and-Layout-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\test-results\\initial-page-load-and-layo-68772-nitial-Page-Load-and-Layout-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\test-results\\initial-page-load-and-layo-68772-nitial-Page-Load-and-Layout-chromium\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\test-results\\initial-page-load-and-layo-68772-nitial-Page-Load-and-Layout-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "bfe11a0195cca3a8efc2-7288f8c47047bebda60b",
+              "file": "initial-page-load-and-layout.spec.ts",
+              "line": 4,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "initial-page-load.spec.ts",
+      "file": "initial-page-load.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Authentication & Landing Page",
+          "file": "initial-page-load.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Initial Page Load",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 5,
+                      "status": "timedOut",
+                      "duration": 34796,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded while setting up \"authenticatedPage\".\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while setting up \"authenticatedPage\".\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded while setting up \"authenticatedPage\".\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\tests\\seed.spec.ts",
+                            "column": 59,
+                            "line": 20
+                          },
+                          "message": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'SSO Login' })\u001b[22m\n\n\n   at ..\\seed.spec.ts:20\n\n  18 |         \n  19 |         // click e12\n> 20 |     await page.getByRole('button', { name: 'SSO Login' }).click();\n     |                                                           ^\n  21 |         \n  22 |         console.log('✅ Authentication complete!');\n  23 |         \n    at Object.authenticatedPage (C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\tests\\seed.spec.ts:20:59)"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "🔐 Setting up authenticated session...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-28T09:03:13.784Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\test-results\\initial-page-load-Authenti-bca52-ding-Page-Initial-Page-Load-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\test-results\\initial-page-load-Authenti-bca52-ding-Page-Initial-Page-Load-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\test-results\\initial-page-load-Authenti-bca52-ding-Page-Initial-Page-Load-chromium\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\test-results\\initial-page-load-Authenti-bca52-ding-Page-Initial-Page-Load-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "a76df19e616958b34d83-3c7c6e4a99f46ff7a758",
+              "file": "initial-page-load.spec.ts",
+              "line": 4,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "initialize-new-chat-session.spec.ts",
+      "file": "initialize-new-chat-session.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Chat Functionality",
+          "file": "initialize-new-chat-session.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Initialize New Chat Session",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 6,
+                      "status": "timedOut",
+                      "duration": 34941,
+                      "error": {
+                        "message": "\u001b[31mTest timeout of 30000ms exceeded while setting up \"authenticatedPage\".\u001b[39m",
+                        "stack": "\u001b[31mTest timeout of 30000ms exceeded while setting up \"authenticatedPage\".\u001b[39m"
+                      },
+                      "errors": [
+                        {
+                          "message": "\u001b[31mTest timeout of 30000ms exceeded while setting up \"authenticatedPage\".\u001b[39m"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\tests\\seed.spec.ts",
+                            "column": 59,
+                            "line": 20
+                          },
+                          "message": "Error: locator.click: Test timeout of 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'SSO Login' })\u001b[22m\n\n\n   at ..\\seed.spec.ts:20\n\n  18 |         \n  19 |         // click e12\n> 20 |     await page.getByRole('button', { name: 'SSO Login' }).click();\n     |                                                           ^\n  21 |         \n  22 |         console.log('✅ Authentication complete!');\n  23 |         \n    at Object.authenticatedPage (C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\tests\\seed.spec.ts:20:59)"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "🔐 Setting up authenticated session...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-28T09:03:13.419Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\test-results\\initialize-new-chat-sessio-86139-Initialize-New-Chat-Session-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\test-results\\initialize-new-chat-sessio-86139-Initialize-New-Chat-Session-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\test-results\\initialize-new-chat-sessio-86139-Initialize-New-Chat-Session-chromium\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\test-results\\initialize-new-chat-sessio-86139-Initialize-New-Chat-Session-chromium\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "5fbf09433ec0a2a01bed-5aa577ccdf0067521532",
+              "file": "initialize-new-chat-session.spec.ts",
+              "line": 4,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "initialize-new-chat.spec.ts",
+      "file": "initialize-new-chat.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Chat Functionality",
+          "file": "initialize-new-chat.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Initialize New Chat",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 4,
+                      "status": "interrupted",
+                      "duration": 2215,
+                      "error": {
+                        "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'SSO Login' })\u001b[22m\n",
+                        "stack": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'SSO Login' })\u001b[22m\n\n    at Object.authenticatedPage (C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\tests\\seed.spec.ts:20:59)",
+                        "location": {
+                          "file": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\tests\\seed.spec.ts",
+                          "column": 59,
+                          "line": 20
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\seed.spec.ts:20\n\n\u001b[0m \u001b[90m 18 |\u001b[39m         \n \u001b[90m 19 |\u001b[39m         \u001b[90m// click e12\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 20 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'SSO Login'\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 21 |\u001b[39m         \n \u001b[90m 22 |\u001b[39m         console\u001b[33m.\u001b[39mlog(\u001b[32m'✅ Authentication complete!'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 23 |\u001b[39m         \u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\tests\\seed.spec.ts",
+                            "column": 59,
+                            "line": 20
+                          },
+                          "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'SSO Login' })\u001b[22m\n\n\n   at ..\\seed.spec.ts:20\n\n  18 |         \n  19 |         // click e12\n> 20 |     await page.getByRole('button', { name: 'SSO Login' }).click();\n     |                                                           ^\n  21 |         \n  22 |         console.log('✅ Authentication complete!');\n  23 |         \n    at Object.authenticatedPage (C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\tests\\seed.spec.ts:20:59)"
+                        },
+                        {
+                          "message": "Error: apiRequestContext._wrapApiCall: Target page, context or browser has been closed"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "🔐 Setting up authenticated session...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-28T09:03:52.168Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\test-results\\initialize-new-chat-Chat-Functionality-Initialize-New-Chat-chromium\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\test-results\\initialize-new-chat-Chat-Functionality-Initialize-New-Chat-chromium\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\tests\\seed.spec.ts",
+                        "column": 59,
+                        "line": 20
+                      }
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "37ba14399b41ce9df1f4-f37474439bbf09bd3c55",
+              "file": "initialize-new-chat.spec.ts",
+              "line": 4,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "login-error-handling.spec.ts",
+      "file": "login-error-handling.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Authentication & Login",
+          "file": "login-error-handling.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Login Error Handling",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 12,
+                      "parallelIndex": 1,
+                      "status": "interrupted",
+                      "duration": 992,
+                      "error": {
+                        "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'SSO Login' })\u001b[22m\n",
+                        "stack": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'SSO Login' })\u001b[22m\n\n    at Object.authenticatedPage (C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\tests\\seed.spec.ts:20:59)",
+                        "location": {
+                          "file": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\tests\\seed.spec.ts",
+                          "column": 59,
+                          "line": 20
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\seed.spec.ts:20\n\n\u001b[0m \u001b[90m 18 |\u001b[39m         \n \u001b[90m 19 |\u001b[39m         \u001b[90m// click e12\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 20 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'SSO Login'\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 21 |\u001b[39m         \n \u001b[90m 22 |\u001b[39m         console\u001b[33m.\u001b[39mlog(\u001b[32m'✅ Authentication complete!'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 23 |\u001b[39m         \u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\tests\\seed.spec.ts",
+                            "column": 59,
+                            "line": 20
+                          },
+                          "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'SSO Login' })\u001b[22m\n\n\n   at ..\\seed.spec.ts:20\n\n  18 |         \n  19 |         // click e12\n> 20 |     await page.getByRole('button', { name: 'SSO Login' }).click();\n     |                                                           ^\n  21 |         \n  22 |         console.log('✅ Authentication complete!');\n  23 |         \n    at Object.authenticatedPage (C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\tests\\seed.spec.ts:20:59)"
+                        },
+                        {
+                          "message": "Error: apiRequestContext._wrapApiCall: Target page, context or browser has been closed"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "🔐 Setting up authenticated session...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-28T09:03:53.158Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\test-results\\login-error-handling-Authe-c00be--Login-Login-Error-Handling-chromium\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\test-results\\login-error-handling-Authe-c00be--Login-Login-Error-Handling-chromium\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\tests\\seed.spec.ts",
+                        "column": 59,
+                        "line": 20
+                      }
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "467fedb8bc10f60dd685-1d739d7b22a67eb1fa3f",
+              "file": "login-error-handling.spec.ts",
+              "line": 4,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "microsoft-authentication-flow.spec.ts",
+      "file": "microsoft-authentication-flow.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Authentication & Landing Page",
+          "file": "microsoft-authentication-flow.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Microsoft Authentication Flow",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "interrupted",
+                      "duration": 1870,
+                      "error": {
+                        "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'SSO Login' })\u001b[22m\n",
+                        "stack": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'SSO Login' })\u001b[22m\n\n    at Object.authenticatedPage (C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\tests\\seed.spec.ts:20:59)",
+                        "location": {
+                          "file": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\tests\\seed.spec.ts",
+                          "column": 59,
+                          "line": 20
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\seed.spec.ts:20\n\n\u001b[0m \u001b[90m 18 |\u001b[39m         \n \u001b[90m 19 |\u001b[39m         \u001b[90m// click e12\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 20 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'SSO Login'\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 21 |\u001b[39m         \n \u001b[90m 22 |\u001b[39m         console\u001b[33m.\u001b[39mlog(\u001b[32m'✅ Authentication complete!'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 23 |\u001b[39m         \u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\tests\\seed.spec.ts",
+                            "column": 59,
+                            "line": 20
+                          },
+                          "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'SSO Login' })\u001b[22m\n\n\n   at ..\\seed.spec.ts:20\n\n  18 |         \n  19 |         // click e12\n> 20 |     await page.getByRole('button', { name: 'SSO Login' }).click();\n     |                                                           ^\n  21 |         \n  22 |         console.log('✅ Authentication complete!');\n  23 |         \n    at Object.authenticatedPage (C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\tests\\seed.spec.ts:20:59)"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "🔐 Setting up authenticated session...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-28T09:03:52.499Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\test-results\\microsoft-authentication-f-f5e22-crosoft-Authentication-Flow-chromium\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\test-results\\microsoft-authentication-f-f5e22-crosoft-Authentication-Flow-chromium\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\tests\\seed.spec.ts",
+                        "column": 59,
+                        "line": 20
+                      }
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "54de4bc23fe28dd71f6c-f1a98740a6d972ddb59d",
+              "file": "microsoft-authentication-flow.spec.ts",
+              "line": 4,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "microsoft-login-form-validation.spec.ts",
+      "file": "microsoft-login-form-validation.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Authentication & Login",
+          "file": "microsoft-login-form-validation.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Microsoft Login Form Validation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 2,
+                      "status": "interrupted",
+                      "duration": 1615,
+                      "error": {
+                        "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'SSO Login' })\u001b[22m\n",
+                        "stack": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'SSO Login' })\u001b[22m\n\n    at Object.authenticatedPage (C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\tests\\seed.spec.ts:20:59)",
+                        "location": {
+                          "file": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\tests\\seed.spec.ts",
+                          "column": 59,
+                          "line": 20
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\seed.spec.ts:20\n\n\u001b[0m \u001b[90m 18 |\u001b[39m         \n \u001b[90m 19 |\u001b[39m         \u001b[90m// click e12\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 20 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'SSO Login'\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 21 |\u001b[39m         \n \u001b[90m 22 |\u001b[39m         console\u001b[33m.\u001b[39mlog(\u001b[32m'✅ Authentication complete!'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 23 |\u001b[39m         \u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\tests\\seed.spec.ts",
+                            "column": 59,
+                            "line": 20
+                          },
+                          "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'SSO Login' })\u001b[22m\n\n\n   at ..\\seed.spec.ts:20\n\n  18 |         \n  19 |         // click e12\n> 20 |     await page.getByRole('button', { name: 'SSO Login' }).click();\n     |                                                           ^\n  21 |         \n  22 |         console.log('✅ Authentication complete!');\n  23 |         \n    at Object.authenticatedPage (C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\tests\\seed.spec.ts:20:59)"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "🔐 Setting up authenticated session...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-28T09:03:52.742Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\test-results\\microsoft-login-form-valid-2c2a9-osoft-Login-Form-Validation-chromium\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\test-results\\microsoft-login-form-valid-2c2a9-osoft-Login-Form-Validation-chromium\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\tests\\seed.spec.ts",
+                        "column": 59,
+                        "line": 20
+                      }
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "548055c7728b8f295daf-be91f13609bbf61219e3",
+              "file": "microsoft-login-form-validation.spec.ts",
+              "line": 4,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "microsoft-signin-page-elements.spec.ts",
+      "file": "microsoft-signin-page-elements.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Authentication & Login",
+          "file": "microsoft-signin-page-elements.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Microsoft Sign-In Page Elements",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 9,
+                      "parallelIndex": 6,
+                      "status": "interrupted",
+                      "duration": 1707,
+                      "error": {
+                        "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'SSO Login' })\u001b[22m\n",
+                        "stack": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'SSO Login' })\u001b[22m\n\n    at Object.authenticatedPage (C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\tests\\seed.spec.ts:20:59)",
+                        "location": {
+                          "file": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\tests\\seed.spec.ts",
+                          "column": 59,
+                          "line": 20
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\seed.spec.ts:20\n\n\u001b[0m \u001b[90m 18 |\u001b[39m         \n \u001b[90m 19 |\u001b[39m         \u001b[90m// click e12\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 20 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'SSO Login'\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 21 |\u001b[39m         \n \u001b[90m 22 |\u001b[39m         console\u001b[33m.\u001b[39mlog(\u001b[32m'✅ Authentication complete!'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 23 |\u001b[39m         \u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\tests\\seed.spec.ts",
+                            "column": 59,
+                            "line": 20
+                          },
+                          "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'SSO Login' })\u001b[22m\n\n\n   at ..\\seed.spec.ts:20\n\n  18 |         \n  19 |         // click e12\n> 20 |     await page.getByRole('button', { name: 'SSO Login' }).click();\n     |                                                           ^\n  21 |         \n  22 |         console.log('✅ Authentication complete!');\n  23 |         \n    at Object.authenticatedPage (C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\tests\\seed.spec.ts:20:59)"
+                        },
+                        {
+                          "message": "Error: apiRequestContext._wrapApiCall: Target page, context or browser has been closed"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "🔐 Setting up authenticated session...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-28T09:03:52.580Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\test-results\\microsoft-signin-page-elem-c44b3-osoft-Sign-In-Page-Elements-chromium\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\test-results\\microsoft-signin-page-elem-c44b3-osoft-Sign-In-Page-Elements-chromium\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\tests\\seed.spec.ts",
+                        "column": 59,
+                        "line": 20
+                      }
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "a7ae0f5b2e741a4fb989-2079c1e9c338fb7e2fc1",
+              "file": "microsoft-signin-page-elements.spec.ts",
+              "line": 4,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "send-basic-message.spec.ts",
+      "file": "send-basic-message.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Chat Functionality",
+          "file": "send-basic-message.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Send Basic Message",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 5,
+                      "status": "interrupted",
+                      "duration": 1378,
+                      "error": {
+                        "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'SSO Login' })\u001b[22m\n",
+                        "stack": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'SSO Login' })\u001b[22m\n\n    at Object.authenticatedPage (C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\tests\\seed.spec.ts:20:59)",
+                        "location": {
+                          "file": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\tests\\seed.spec.ts",
+                          "column": 59,
+                          "line": 20
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\seed.spec.ts:20\n\n\u001b[0m \u001b[90m 18 |\u001b[39m         \n \u001b[90m 19 |\u001b[39m         \u001b[90m// click e12\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 20 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mgetByRole(\u001b[32m'button'\u001b[39m\u001b[33m,\u001b[39m { name\u001b[33m:\u001b[39m \u001b[32m'SSO Login'\u001b[39m })\u001b[33m.\u001b[39mclick()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 21 |\u001b[39m         \n \u001b[90m 22 |\u001b[39m         console\u001b[33m.\u001b[39mlog(\u001b[32m'✅ Authentication complete!'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 23 |\u001b[39m         \u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\tests\\seed.spec.ts",
+                            "column": 59,
+                            "line": 20
+                          },
+                          "message": "Error: locator.click: Target page, context or browser has been closed\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'SSO Login' })\u001b[22m\n\n\n   at ..\\seed.spec.ts:20\n\n  18 |         \n  19 |         // click e12\n> 20 |     await page.getByRole('button', { name: 'SSO Login' }).click();\n     |                                                           ^\n  21 |         \n  22 |         console.log('✅ Authentication complete!');\n  23 |         \n    at Object.authenticatedPage (C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\tests\\seed.spec.ts:20:59)"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "🔐 Setting up authenticated session...\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-04-28T09:03:52.898Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\test-results\\send-basic-message-Chat-Functionality-Send-Basic-Message-chromium\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\test-results\\send-basic-message-Chat-Functionality-Send-Basic-Message-chromium\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\2000153480\\Downloads\\testing\\pipeline-ui\\backend\\tests\\seed.spec.ts",
+                        "column": 59,
+                        "line": 20
+                      }
+                    }
+                  ],
+                  "status": "skipped"
+                }
+              ],
+              "id": "09e54bf9fc3f03c44788-a35d63ea372a0a1cfd0b",
+              "file": "send-basic-message.spec.ts",
+              "line": 4,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "sign-in-options-availability.spec.ts",
+      "file": "sign-in-options-availability.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Authentication & Login",
+          "file": "sign-in-options-availability.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Sign-in Options Availability",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "6081d640ab21699798a4-4d4029c0c3c00d75d900",
+              "file": "sign-in-options-availability.spec.ts",
+              "line": 4,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "sso-login-flow.spec.ts",
+      "file": "sso-login-flow.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Authentication & Login",
+          "file": "sso-login-flow.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "SSO Login Flow",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1c425bea288b1ccc7450-6a3e4184a76638bd64e3",
+              "file": "sso-login-flow.spec.ts",
+              "line": 4,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "sso-login-navigation.spec.ts",
+      "file": "sso-login-navigation.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Authentication & Landing Page",
+          "file": "sso-login-navigation.spec.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "SSO Login Navigation",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "3205c723f40e71d876ad-bd6f3d13692d482fbea3",
+              "file": "sso-login-navigation.spec.ts",
+              "line": 4,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-04-28T09:03:10.541Z",
+    "duration": 45407.31,
+    "expected": 0,
+    "skipped": 9,
+    "unexpected": 7,
+    "flaky": 0
+  }
+}

@@ -1,0 +1,7 @@
+.env
+venv
+1.40.0
+agent_workflow.py
+playwright.config.ts
+.playwright-cli
+node_modules

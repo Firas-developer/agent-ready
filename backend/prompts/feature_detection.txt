@@ -1,0 +1,131 @@
+2️⃣ HIGH PRIORITY - IDs & Names
+jsx
+
+
+<input id="username-field" />              → input#username-field
+<textarea name="message-input" />          → textarea[name="message-input"]
+<button id="submit-btn">                   → button#submit-btn
+3️⃣ MEDIUM PRIORITY - Unique Classes
+jsx
+
+
+<div className="custom-chat-container">    → div.custom-chat-container
+<button className="primary-action-btn">    → button.primary-action-btn
+4️⃣ LOW PRIORITY - Text Content
+jsx
+
+
+<button>Send Message</button>              → button:has-text("Send Message")
+<a href="/settings">Settings</a>           → a:has-text("Settings")
+5️⃣ LAST RESORT - Generic + Attributes
+jsx
+
+
+<input type="email" placeholder="Email">   → input[type="email"][placeholder="Email"]
+<button type="submit">                     → button[type="submit"]
+❌ NEVER USE - Generic without context
+
+
+button              ← TOO GENERIC
+input               ← TOO GENERIC
+div.btn             ← TOO GENERIC
+.ant-btn            ← LIBRARY CLASS (changes with updates)
+Selector Extraction Examples
+✅ GOOD Example (Real selectors from code)
+jsx
+
+
+// Source code:
+<textarea 
+  data-testid="chat-input"
+  className="custom-chat-textarea bg-dark"
+  placeholder="Message Tensai..."
+  name="userMessage"
+/>
+<button 
+  data-testid="send-btn"
+  aria-label="Send message"
+  className="send-button"
+>
+  <SendIcon />
+</button>
+Your output should be:
+json
+
+
+{
+  "ui_components": {
+    "messageInput": {
+      "type": "textarea",
+      "selector": "textarea[data-testid='chat-input']",
+      "alternative_selectors": [
+        "textarea.custom-chat-textarea",
+        "textarea[name='userMessage']",
+        "textarea[placeholder='Message Tensai...']"
+      ],
+      "action": "fill",
+      "test_value": "Hello, this is a test message"
+    },
+    "sendButton": {
+      "type": "button",
+      "selector": "button[data-testid='send-btn']",
+      "alternative_selectors": [
+        "button[aria-label='Send message']",
+        "button.send-button"
+      ],
+      "action": "click"
+    }
+  }
+}
+❌ BAD Example (Generic guessing)
+json
+
+
+{
+  "ui_components": {
+    "messageInput": {
+      "selector": "textarea",  ← WRONG: Too generic
+      "alternative_selectors": ["input"]  ← WRONG: Doesn't exist
+    },
+    "sendButton": {
+      "selector": "button",  ← WRONG: Too generic
+      "alternative_selectors": [".btn"]  ← WRONG: Not in source code
+    }
+  }
+}
+Output Format
+Return ONLY valid JSON array with this EXACT structure:
+json
+
+
+[
+  {
+    "name": "Feature Name (descriptive, user-facing)",
+    "type": "feature_type",
+    "priority": "high|medium|low",
+    "entry_point": "/route/path",
+    "description": "Clear description of what user can do",
+    "detected_from": ["path/to/Component.tsx", "path/to/OtherFile.tsx"],
+    "ui_components": {
+      "componentName": {
+        "type": "button|input|textarea|select|checkbox|etc",
+        "selector": "MOST STABLE SELECTOR FROM SOURCE CODE",
+        "alternative_selectors": [
+          "SECOND BEST SELECTOR",
+          "THIRD BEST SELECTOR"
+        ],
+        "action": "click|fill|select|check|press",
+        "test_value": "Value for fill/select actions (optional)"
+      }
+    },
+    "test_steps": [
+      {
+        "step": 1,
+        "action": "fill|click|select|check|navigate|wait|verify_visible",
+        "component": "componentName (must match key in ui_components)",
+        "value": "test value or parameter (optional)",
+        "description": "Human-readable step description"
+      }
+    ]
+  }
+]
